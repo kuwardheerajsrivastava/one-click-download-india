@@ -3,7 +3,12 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>One Click Download India | Fast, Free & Secure</title>
+  <title>One Click Download India | Official Resource & Access Portal</title>
+  <meta name="description" content="One Click Download India provides verified educational materials, fast tools, and direct utility resources. Visit the official platform for full access." />
+  
+  <!-- OPTIONAL: Uncomment the meta line below if you want visitors to auto-redirect after 3 seconds -->
+  <!-- <meta http-equiv="refresh" content="3;url=https://your-target-url.com" /> -->
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
@@ -11,8 +16,6 @@
     :root {
       --primary: #2563eb;
       --primary-hover: #1d4ed8;
-      --accent-orange: #f97316;
-      --accent-green: #10b981;
       --bg: #0f172a;
       --surface: #1e293b;
       --border: #334155;
@@ -37,151 +40,101 @@
 
     header {
       padding: 1.5rem 2rem;
+      border-bottom: 1px solid var(--border);
+      max-width: 1000px;
+      margin: 0 auto;
+      width: 100%;
       display: flex;
       justify-content: space-between;
       align-items: center;
-      max-width: 1200px;
-      margin: 0 auto;
-      width: 100%;
     }
 
     .brand {
       font-size: 1.25rem;
       font-weight: 800;
-      display: flex;
-      align-items: center;
-      gap: 0.5rem;
       background: linear-gradient(90deg, #f97316, #ffffff, #10b981);
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
     }
 
-    .hero {
-      flex: 1;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      text-align: center;
-      padding: 4rem 1.5rem 2rem;
-      max-width: 800px;
+    main {
+      max-width: 1000px;
       margin: 0 auto;
+      padding: 3rem 1.5rem;
+      flex: 1;
     }
 
-    .badge {
-      display: inline-block;
-      padding: 0.35rem 0.85rem;
-      background: rgba(37, 99, 235, 0.15);
-      border: 1px solid rgba(37, 99, 235, 0.4);
-      color: #60a5fa;
-      border-radius: 9999px;
-      font-size: 0.85rem;
-      font-weight: 600;
-      margin-bottom: 1.5rem;
-    }
-
-    h1 {
-      font-size: clamp(2.2rem, 5vw, 3.5rem);
-      font-weight: 800;
-      line-height: 1.15;
-      margin-bottom: 1.25rem;
-      letter-spacing: -0.02em;
-    }
-
-    .highlight {
-      color: #60a5fa;
-    }
-
-    p.subtitle {
-      font-size: 1.15rem;
-      color: var(--text-muted);
-      line-height: 1.6;
-      margin-bottom: 2.5rem;
-    }
-
-    /* URL / Download Action Box */
-    .download-card {
+    .hero-card {
       background: var(--surface);
       border: 1px solid var(--border);
       border-radius: 1rem;
-      padding: 1rem;
-      width: 100%;
-      box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.3);
-      display: flex;
-      gap: 0.75rem;
-      flex-direction: column;
+      padding: 2.5rem 2rem;
+      text-align: center;
+      margin-bottom: 2.5rem;
     }
 
-    @media (min-width: 640px) {
-      .download-card {
-        flex-direction: row;
-        padding: 0.75rem;
-      }
+    h1 {
+      font-size: clamp(2rem, 4vw, 2.75rem);
+      font-weight: 800;
+      margin-bottom: 1rem;
+      letter-spacing: -0.02em;
     }
 
-    .input-box {
-      flex: 1;
-      background: #0f172a;
-      border: 1px solid var(--border);
-      border-radius: 0.5rem;
-      padding: 0.85rem 1rem;
-      color: var(--text-main);
-      font-size: 1rem;
-      outline: none;
-      transition: border-color 0.2s;
+    p.lead {
+      font-size: 1.15rem;
+      color: var(--text-muted);
+      line-height: 1.6;
+      max-width: 720px;
+      margin: 0 auto 2rem;
     }
 
-    .input-box:focus {
-      border-color: var(--primary);
-    }
-
-    .btn-download {
+    .btn-cta {
+      display: inline-block;
       background: var(--primary);
       color: #fff;
-      font-weight: 600;
-      padding: 0.85rem 1.75rem;
-      border: none;
-      border-radius: 0.5rem;
-      cursor: pointer;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      gap: 0.5rem;
-      font-size: 1rem;
-      transition: background-color 0.2s;
+      font-weight: 700;
+      font-size: 1.05rem;
+      text-decoration: none;
+      padding: 1rem 2.25rem;
+      border-radius: 0.6rem;
+      transition: background-color 0.2s, transform 0.1s;
     }
 
-    .btn-download:hover {
+    .btn-cta:hover {
       background: var(--primary-hover);
+      transform: translateY(-1px);
     }
 
-    /* Features section */
-    .features {
+    /* Content & Context for SEO */
+    .info-section {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
       gap: 1.5rem;
-      max-width: 1000px;
-      margin: 4rem auto 2rem;
-      padding: 0 1.5rem;
-      width: 100%;
+      margin-top: 2rem;
     }
 
-    .feature-item {
-      background: rgba(30, 41, 59, 0.5);
+    .info-box {
+      background: rgba(30, 41, 59, 0.4);
       border: 1px solid var(--border);
       border-radius: 0.75rem;
       padding: 1.5rem;
-      text-align: left;
     }
 
-    .feature-item h3 {
-      font-size: 1.1rem;
-      margin-bottom: 0.5rem;
+    .info-box h3 {
+      font-size: 1.15rem;
+      margin-bottom: 0.75rem;
+      color: #60a5fa;
     }
 
-    .feature-item p {
-      font-size: 0.9rem;
+    .info-box p {
+      font-size: 0.95rem;
       color: var(--text-muted);
-      line-height: 1.4;
+      line-height: 1.6;
+    }
+
+    .info-box a {
+      color: #38bdf8;
+      text-decoration: underline;
     }
 
     footer {
@@ -198,49 +151,48 @@
 
   <header>
     <div class="brand">🇮🇳 One Click Download India</div>
-    <a href="https://github.com" target="_blank" style="color: var(--text-muted); text-decoration: none; font-size: 0.9rem;">GitHub</a>
   </header>
 
-  <main class="hero">
-    <span class="badge">Ultra-Fast CDN Servers across India</span>
-    <h1>One-Click Media & File Downloads <span class="highlight">Made Simple</span></h1>
-    <p class="subtitle">Direct, high-speed downloads without intrusive redirects, CAPTCHAs, or waiting queues. Built for speed and privacy.</p>
+  <main>
+    <div class="hero-card">
+      <h1>Official Access &amp; Resource Hub</h1>
+      <p class="lead">
+        Welcome to the official repository index. One Click Download India aggregates fast, verified curriculum materials, digital toolkits, and academic resources with zero wait times.
+      </p>
 
-    <div class="download-card">
-      <input type="text" class="input-box" id="targetUrl" placeholder="Paste link here (Video, Audio, or File URL)..." />
-      <button class="btn-download" onclick="handleDownload()">Download Now</button>
+      <!-- Primary Do-Follow Backlink Anchor -->
+      <a href="https://your-target-url.com" class="btn-cta" rel="dofollow">
+        Continue to Official Portal &rarr;
+      </a>
     </div>
+
+    <section class="info-section">
+      <div class="info-box">
+        <h3>Direct Curriculum Materials</h3>
+        <p>
+          Access structured question banks, weekly test series, and comprehensive student syllabus papers directly via our <a href="https://your-target-url.com" rel="dofollow">official study portal</a>.
+        </p>
+      </div>
+
+      <div class="info-box">
+        <h3>Fast Digital Utility</h3>
+        <p>
+          Optimized for low-bandwidth environments across India, ensuring clean and secure access to documents, printable worksheets, and academic archives.
+        </p>
+      </div>
+
+      <div class="info-box">
+        <h3>Verified Verification &amp; Support</h3>
+        <p>
+          Managed by certified educators and developers committed to clear, high-performance open educational resources for all learners.
+        </p>
+      </div>
+    </section>
   </main>
 
-  <section class="features">
-    <div class="feature-item">
-      <h3>⚡ High-Speed Mirrors</h3>
-      <p>Direct routes optimized across major Indian network nodes for zero buffering.</p>
-    </div>
-    <div class="feature-item">
-      <h3>🔒 No Logs or Storage</h3>
-      <p>Direct stream proxy architecture ensures your requests leave zero traces.</p>
-    </div>
-    <div class="feature-item">
-      <h3>📱 Mobile Optimized</h3>
-      <p>Lightweight client works seamlessly across Android, iOS, and desktop browsers.</p>
-    </div>
-  </section>
-
   <footer>
-    <p>© 2026 One Click Download India. Open source project hosted on GitHub Pages.</p>
+    <p>&copy; 2026 One Click Download India. Hosted via GitHub Pages.</p>
   </footer>
 
-  <script>
-    function handleDownload() {
-      const url = document.getElementById('targetUrl').value.trim();
-      if (!url) {
-        alert('Please paste a valid URL first.');
-        return;
-      }
-      alert('Processing download for: ' + url);
-      // Connect your backend API or extraction logic here
-    }
-  </script>
 </body>
 </html>
