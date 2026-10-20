@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>One Click Download India | Fast, Free & Secure</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --primary: #2563eb;
+      --primary-hover: #1d4ed8;
+      --accent-orange: #f97316;
+      --accent-green: #10b981;
+      --bg: #0f172a;
+      --surface: #1e293b;
+      --border: #334155;
+      --text-main: #f8fafc;
+      --text-muted: #94a3b8;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: 'Plus Jakarta Sans', sans-serif;
+    }
+
+    body {
+      background-color: var(--bg);
+      color: var(--text-main);
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+
+    header {
+      padding: 1.5rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      max-width: 1200px;
+      margin: 0 auto;
+      width: 100%;
+    }
+
+    .brand {
+      font-size: 1.25rem;
+      font-weight: 800;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      background: linear-gradient(90deg, #f97316, #ffffff, #10b981);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .hero {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      padding: 4rem 1.5rem 2rem;
+      max-width: 800px;
+      margin: 0 auto;
+    }
+
+    .badge {
+      display: inline-block;
+      padding: 0.35rem 0.85rem;
+      background: rgba(37, 99, 235, 0.15);
+      border: 1px solid rgba(37, 99, 235, 0.4);
+      color: #60a5fa;
+      border-radius: 9999px;
+      font-size: 0.85rem;
+      font-weight: 600;
+      margin-bottom: 1.5rem;
+    }
+
+    h1 {
+      font-size: clamp(2.2rem, 5vw, 3.5rem);
+      font-weight: 800;
+      line-height: 1.15;
+      margin-bottom: 1.25rem;
+      letter-spacing: -0.02em;
+    }
+
+    .highlight {
+      color: #60a5fa;
+    }
+
+    p.subtitle {
+      font-size: 1.15rem;
+      color: var(--text-muted);
+      line-height: 1.6;
+      margin-bottom: 2.5rem;
+    }
+
+    /* URL / Download Action Box */
+    .download-card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 1rem;
+      padding: 1rem;
+      width: 100%;
+      box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.3);
+      display: flex;
+      gap: 0.75rem;
+      flex-direction: column;
+    }
+
+    @media (min-width: 640px) {
+      .download-card {
+        flex-direction: row;
+        padding: 0.75rem;
+      }
+    }
+
+    .input-box {
+      flex: 1;
+      background: #0f172a;
+      border: 1px solid var(--border);
+      border-radius: 0.5rem;
+      padding: 0.85rem 1rem;
+      color: var(--text-main);
+      font-size: 1rem;
+      outline: none;
+      transition: border-color 0.2s;
+    }
+
+    .input-box:focus {
+      border-color: var(--primary);
+    }
+
+    .btn-download {
+      background: var(--primary);
+      color: #fff;
+      font-weight: 600;
+      padding: 0.85rem 1.75rem;
+      border: none;
+      border-radius: 0.5rem;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.5rem;
+      font-size: 1rem;
+      transition: background-color 0.2s;
+    }
+
+    .btn-download:hover {
+      background: var(--primary-hover);
+    }
+
+    /* Features section */
+    .features {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 1.5rem;
+      max-width: 1000px;
+      margin: 4rem auto 2rem;
+      padding: 0 1.5rem;
+      width: 100%;
+    }
+
+    .feature-item {
+      background: rgba(30, 41, 59, 0.5);
+      border: 1px solid var(--border);
+      border-radius: 0.75rem;
+      padding: 1.5rem;
+      text-align: left;
+    }
+
+    .feature-item h3 {
+      font-size: 1.1rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .feature-item p {
+      font-size: 0.9rem;
+      color: var(--text-muted);
+      line-height: 1.4;
+    }
+
+    footer {
+      border-top: 1px solid var(--border);
+      padding: 2rem 1.5rem;
+      text-align: center;
+      color: var(--text-muted);
+      font-size: 0.85rem;
+      margin-top: auto;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="brand">🇮🇳 One Click Download India</div>
+    <a href="https://github.com" target="_blank" style="color: var(--text-muted); text-decoration: none; font-size: 0.9rem;">GitHub</a>
+  </header>
+
+  <main class="hero">
+    <span class="badge">Ultra-Fast CDN Servers across India</span>
+    <h1>One-Click Media & File Downloads <span class="highlight">Made Simple</span></h1>
+    <p class="subtitle">Direct, high-speed downloads without intrusive redirects, CAPTCHAs, or waiting queues. Built for speed and privacy.</p>
+
+    <div class="download-card">
+      <input type="text" class="input-box" id="targetUrl" placeholder="Paste link here (Video, Audio, or File URL)..." />
+      <button class="btn-download" onclick="handleDownload()">Download Now</button>
+    </div>
+  </main>
+
+  <section class="features">
+    <div class="feature-item">
+      <h3>⚡ High-Speed Mirrors</h3>
+      <p>Direct routes optimized across major Indian network nodes for zero buffering.</p>
+    </div>
+    <div class="feature-item">
+      <h3>🔒 No Logs or Storage</h3>
+      <p>Direct stream proxy architecture ensures your requests leave zero traces.</p>
+    </div>
+    <div class="feature-item">
+      <h3>📱 Mobile Optimized</h3>
+      <p>Lightweight client works seamlessly across Android, iOS, and desktop browsers.</p>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2026 One Click Download India. Open source project hosted on GitHub Pages.</p>
+  </footer>
+
+  <script>
+    function handleDownload() {
+      const url = document.getElementById('targetUrl').value.trim();
+      if (!url) {
+        alert('Please paste a valid URL first.');
+        return;
+      }
+      alert('Processing download for: ' + url);
+      // Connect your backend API or extraction logic here
+    }
+  </script>
+</body>
+</html>
